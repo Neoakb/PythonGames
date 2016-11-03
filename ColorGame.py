@@ -14,6 +14,8 @@ def menu():
     print "[1] Red\n[2] Green\n[3] Blue\n[q] Quit\n"
     return raw_input("\nWhat's your favorite color?\n\n")
 
+    # here's a comment 
+
 CHOICE = ""
 os.system('clear')
 banner()
