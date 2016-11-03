@@ -15,6 +15,7 @@ def menu():
     return raw_input("\nWhat's your favorite color?\n\n")
 
     # here's a comment 
+    #comment 2
 
 CHOICE = ""
 os.system('clear')
