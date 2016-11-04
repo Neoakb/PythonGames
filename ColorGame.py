@@ -1,7 +1,8 @@
 import os
 
 
-### Guess The Color game ###
+### Guess The Color Game ###
+
 
 def banner():
     # displays banner
@@ -14,9 +15,6 @@ def menu():
     print "[1] Red\n[2] Green\n[3] Blue\n[q] Quit\n"
     return raw_input("\nWhat's your favorite color?\n\n")
 
-    # here's a comment 
-    # comment 2
-
 CHOICE = ""
 os.system('clear')
 banner()
@@ -25,11 +23,13 @@ while CHOICE != "q":
     CHOICE = menu()
 
     if CHOICE == "1":
+        # win condition
         os.system("clear")
         banner()
         print "Correct!"
         print "You are win!\n"
     elif CHOICE == "2" or CHOICE == "3":
+        # lose condition
         os.system("clear")
         banner()
         choice2 = ""
@@ -37,15 +37,19 @@ while CHOICE != "q":
         print "I am dissapoint\n"
         choice2 = raw_input("Hit enter to try again\nEnter [q] to quit\n")
         if choice2 == "":
+            # try again
             os.system('clear')
             banner()
         elif choice2 == "q":
+            # quit
             CHOICE = "q"
     elif CHOICE == "q":
+        # quit
         os.system("clear")
         banner()
         print "GOODBYE\n"
     else:
+        # unknown CHOICE
         os.system("clear")
         banner()
         print "Sorry, I didn't understand that, try again.\n"
