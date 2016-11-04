@@ -3,7 +3,6 @@ import os
 
 ### Guess The Color Game ###
 
-
 def banner():
     # displays banner
     print "\t********************************"
@@ -32,15 +31,15 @@ while CHOICE != "q":
         # lose condition
         os.system("clear")
         banner()
-        choice2 = ""
+        CHOICE2 = ""
         print "WRONG!"
         print "I am dissapoint\n"
-        choice2 = raw_input("Hit enter to try again\nEnter [q] to quit\n")
-        if choice2 == "":
+        CHOICE2 = raw_input("Hit enter to try again\nEnter [q] to quit\n")
+        if CHOICE2 == "":
             # try again
             os.system('clear')
             banner()
-        elif choice2 == "q":
+        elif CHOICE2 == "q":
             # quit
             CHOICE = "q"
     elif CHOICE == "q":
