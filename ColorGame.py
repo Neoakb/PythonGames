@@ -15,7 +15,7 @@ def menu():
     return raw_input("\nWhat's your favorite color?\n\n")
 
     # here's a comment 
-    #comment 2
+    # comment 2
 
 CHOICE = ""
 os.system('clear')
@@ -38,6 +38,7 @@ while CHOICE != "q":
         choice2 = raw_input("Hit enter to try again\nEnter [q] to quit\n")
         if choice2 == "":
             os.system('clear')
+            banner()
         elif choice2 == "q":
             CHOICE = "q"
     elif CHOICE == "q":
