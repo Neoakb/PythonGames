@@ -3,7 +3,7 @@ import random
 
 ### Guess The Color Game ###
 
-#linux version (cl.s for win)
+#linux version (cl.s for win) keep this
 
 def banner():
     #displays banner
