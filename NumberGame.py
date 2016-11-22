@@ -7,6 +7,7 @@ import random
 
 def banner():
     #displays banner
+    os.system('clear')
     print "\t**********************************"
     print "\t******** !Number Game! ***********"
     print "\t**********************************\n"
@@ -18,13 +19,12 @@ def menu():
 
 def unknown():
     #unknown CHOICE
-    os.system("clear")
     banner()
     print "Sorry, I didn't understand that, try again.\n"
 
-NUMBER = str(random.randint(1,10)) #get a random number and turn it into a string to match user input
+NUMBER = str(random.randint(1, 10))
+#get a random number and turn it into a string to match user input
 CHOICE = ""
-os.system('clear')
 banner()
 while CHOICE != "q":
 
@@ -32,7 +32,6 @@ while CHOICE != "q":
 
     if CHOICE == NUMBER:
         #win condition
-        os.system("clear")
         banner()
         print "Correct!"
         print "You are win!\n"
@@ -40,13 +39,11 @@ while CHOICE != "q":
         #finish replay mechanic
     elif CHOICE != NUMBER and CHOICE != "q":
         #lose condition
-        os.system("clear")
         banner()
         print "WRONG!"
         print "Try again. \n"
     elif CHOICE == "q":
         #quit
-        os.system("clear")
         banner()
         print "Thanks for playing!\n"
     else:
